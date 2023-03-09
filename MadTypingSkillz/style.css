@@ -18,3 +18,6 @@ body{
     word-spacing: 10px;
     background-color: rgba(0, 0, 0, 0.3);
 }
+.firstArray,.secondArray, .fastest, .mostAccurate, .averageA, .averageWPM, .latestA, .latestWPM, .differenceA, .differenceWPM{
+    margin-top: 10px;
+}
