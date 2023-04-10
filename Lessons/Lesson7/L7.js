@@ -15,3 +15,36 @@ const twoDArray = [
     [4,5,6],
     [7,8,9]
 ]
+
+
+const jerry = {
+    age:18,
+    body: "thin",
+    playGame(){
+        console.log('play AOV')
+    },
+    biking(){
+        console.log('he rode his bike')
+    }
+}
+ 
+const ethan = {
+    age:17,
+    body: "thin",
+    playGame(){
+        console.log('play AOV')
+    },
+    biking(){
+        console.log('he rode his bike')
+    }
+}
+const thomas = {
+    age:18,
+    body: "medium",
+    playBadminton(){
+        console.log('play Badminton')
+    },
+    biking(){
+        console.log('he ride his bike')
+    }
+}

@@ -1,6 +1,6 @@
 arr = [
-    [90, 90, 92, 94, 94, 94, 95, 95, 94, 95, 95, 96],
-    [12, 14, 15, 16, 18, 18, 19, 20, 21, 22, 25, 23]
+    [90, 90, 92, 94, 94, 94, 95, 95, 94, 95, 95, 96, 95],
+    [12, 14, 15, 16, 18, 18, 19, 20, 21, 22, 25, 23, 22]
 ]
 document.querySelector(".firstArray").innerText = "Accuracy: " + arr[0]
 document.querySelector(".secondArray").innerText ="WPM: " + arr[1]
