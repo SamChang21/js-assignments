@@ -1,9 +1,13 @@
 //cleaning
 const gotCleanData = localStorage.getItem('cleanArray')
 const convertedCleanData = JSON.parse(gotCleanData)
-let robotsclean = []
-if (robotsclean === null){
-    robotsclean = []
+// if there is no local storage data, make empty array
+// else add the converted data as robotsclean
+if (convertedCleanData === null){
+    let robotsclean = []
+}else{
+    let robotsclean = []
+    robotsclean = convertedCleanData
 }
 class Robotclean {
     constructor(num, functions, time, imgURL){
@@ -25,6 +29,8 @@ function cleanClick(){
     console.log(robot)
     // add to array
     robotsclean.push(robot)
+    // clear the screen
+    document.querySelector("#workingClean").innerHTML = ``
     // show on screen (forEach)
     robotsclean.forEach(function(element){
         document.querySelector("#workingClean").innerHTML += `
@@ -36,10 +42,17 @@ function cleanClick(){
     localStorage.setItem('cleanArray',cleanData)
     const gotCleanData = localStorage.getItem('cleanArray')
     const convertedCleanData = JSON.parse(gotCleanData)
-    }
-    convertedCleanData.forEach(function(element){
-        document.querySelector("#workingClean").innerHTML += `
-        <img src='${element.imgURL}' />
-        <p>The robot No. ${element.num} is ${element.functions} at ${element.time}</p>
-        `
-    });
+}
+
+convertedCleanData.forEach(function(element){
+    document.querySelector("#workingClean").innerHTML += `
+    <img src='${element.imgURL}' />
+    <p>The robot No. ${element.num} is ${element.functions} at ${element.time}</p>
+    `
+});
+
+function cleanDelete(){
+    const filteredrobotsclean = robotsclean.filter(function (element) {
+        
+    })
+}
